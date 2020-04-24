@@ -1,0 +1,17 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="settings_header">40dp</dimen>
+    <dimen name="set_header">60dp</dimen>
+    <dimen name="action_bar_dimen">40dp</dimen>
+    <dimen name="all_margins">8dp</dimen>
+    <dimen name="all_05_margins">4dp</dimen>
+    <dimen name="all_025_margins">2dp</dimen>
+    <dimen name="act_bar_dimen">48dp</dimen>
+    <dimen name="elev">4dp</dimen>
+
+    <item name="ninetynine" type="dimen">95%</item>
+</resources>

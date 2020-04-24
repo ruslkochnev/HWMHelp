@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/nav_news_hot"
+            android:icon="@android:drawable/stat_notify_chat"
+            android:title="@string/nav_news_hot" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:title="@string/nav_about"            />
+
+
+        <item
+            android:id="@+id/nav_yours_help"
+            android:title="@string/nav_yours_help" />
+        <item
+            android:id="@+id/nav_faq"
+            android:title="@string/nav_faq" />
+        <item
+            android:id="@+id/nav_traffic"
+            android:title="@string/nav_traffic" />
+
+
+        <item
+            android:id="@+id/nav_game_rules"
+            android:title="@string/nav_game_rules" />
+        <item
+            android:id="@+id/nav_general_rules"
+            android:title="@string/nav_general_rules" />
+        <item
+            android:id="@+id/nav_forum_rules"
+            android:title="@string/nav_forum_rules" />
+        <item
+            android:id="@+id/nav_chat_rules"
+            android:title="@string/nav_chat_rules" />
+
+
+        <item
+            android:id="@+id/nav_character"
+            android:title="@string/nav_character" />
+        <item
+            android:id="@+id/nav_faction"
+            android:title="@string/nav_faction" />
+        <item
+            android:id="@+id/nav_skills_abilities"
+            android:title="@string/nav_skills_abilities" />
+        <item
+            android:id="@+id/nav_unique_abilities"
+            android:title="@string/nav_unique_abilities" />
+        <item
+            android:id="@+id/nav_guilds"
+            android:title="@string/nav_guilds" />
+        <item
+            android:id="@+id/nav_statistic_protocols"
+            android:title="@string/nav_statistic_protocols" />
+        <item
+            android:id="@+id/nav_exp_tables"
+            android:title="@string/nav_exp_tables" />
+
+
+        <item
+            android:id="@+id/nav_arts"
+            android:title="@string/nav_arts" />
+        <item
+            android:id="@+id/nav_sets"
+            android:title="@string/nav_sets" />
+        <item
+            android:id="@+id/nav_medals"
+            android:title="@string/nav_medals" />
+
+
+        <item
+            android:id="@+id/nav_estate"
+            android:title="@string/nav_estate" />
+        <item
+            android:id="@+id/nav_statistic"
+            android:title="@string/nav_statistic" />
+        <item
+            android:id="@+id/nav_production_works"
+            android:title="@string/nav_production_works" />
+        <item
+            android:id="@+id/nav_estates_deposit"
+            android:title="@string/nav_estates_deposit" />
+        <item
+            android:id="@+id/nav_castle_construct"
+            android:title="@string/nav_castle_construct" />
+        <item
+            android:id="@+id/nav_market"
+            android:title="@string/nav_market" />
+
+
+        <item
+            android:id="@+id/nav_combat_conduct"
+            android:title="@string/nav_combat_conduct" />
+        <item
+            android:id="@+id/nav_recruiting"
+            android:title="@string/nav_recruiting" />
+        <item
+            android:id="@+id/nav_troops_settlement"
+            android:title="@string/nav_troops_settlement" />
+        <item
+            android:id="@+id/nav_control_panel"
+            android:title="@string/nav_control_panel" />
+        <item
+            android:id="@+id/nav_initiative_bar"
+            android:title="@string/nav_initiative_bar" />
+        <item
+            android:id="@+id/nav_combat_managment"
+            android:title="@string/nav_combat_managment" />
+        <item
+            android:id="@+id/nav_spells"
+            android:title="@string/nav_spells" />
+        <item
+            android:id="@+id/nav_special_abilities"
+            android:title="@string/nav_special_abilities" />
+        <item
+            android:id="@+id/nav_heros_action"
+            android:title="@string/nav_heros_action" />
+        <item
+            android:id="@+id/nav_damage_heal"
+            android:title="@string/nav_damage_heal" />
+        <item
+            android:id="@+id/nav_luck_morale"
+            android:title="@string/nav_luck_morale" />
+
+
+        <item
+            android:id="@+id/nav_ingame_communication"
+            android:title="@string/nav_ingame_communication" />
+        <item
+            android:id="@+id/nav_chat"
+            android:title="@string/nav_chat" />
+        <item
+            android:id="@+id/nav_forum"
+            android:title="@string/nav_forum" />
+        <item
+            android:id="@+id/nav_pm"
+            android:title="@string/nav_pm" />
+
+
+        <item
+            android:id="@+id/nav_tournaments"
+            android:title="@string/nav_tournaments" />
+
+        <item
+            android:id="@+id/nav_card_game"
+            android:title="@string/nav_card_game" />
+
+        <item
+            android:id="@+id/nav_quests"
+            android:title="@string/nav_quests" />
+        <item
+            android:id="@+id/nav_text_quests"
+            android:title="@string/nav_text_quests" />
+        <item
+            android:id="@+id/nav_combat_quests"
+            android:title="@string/nav_combat_quests" />
+
+        <item
+            android:id="@+id/nav_roulette"
+            android:title="@string/nav_roulette" />
+        </menu>

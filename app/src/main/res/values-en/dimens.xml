@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="settings_header">40dp</dimen>
+    <dimen name="set_header">60dp</dimen>
+
+</resources>
