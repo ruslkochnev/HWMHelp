@@ -54,7 +54,7 @@
             android:layout_margin="@dimen/all_025_margins"
             android:layout_weight="1"
             app:adSize="BANNER"
-            app:adUnitId="ca-app-pub-6978053805119593/1424709345"
+            app:adUnitId="@string/ad_id"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent">
