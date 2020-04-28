@@ -24,17 +24,17 @@ public class About extends AppCompatActivity {
     }
 
     public void onGooglePlayClick(View view) {
-        Intent gpIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/dev?id=7828901610757597354"));
+        Intent gpIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.gp_link)));
         startActivity(gpIntent);
     }
 
     public void onLWMClick(View view) {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.heroeswm.ru/?rid=692098"));
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.hwm_reflink)));
         startActivity(browserIntent);
     }
 
     public void onVKClick(View view) {
-        Intent vkIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://vk.com/sparkysparkybooman"));
+        Intent vkIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.vk_link)));
         startActivity(vkIntent);
     }
 

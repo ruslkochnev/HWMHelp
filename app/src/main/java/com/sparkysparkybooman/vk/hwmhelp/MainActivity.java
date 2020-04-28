@@ -219,8 +219,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void genData() {
-        title = new ArrayList<String>();
-        child = new HashMap<String, List<String>>();
+        title = new ArrayList<>();
+        child = new HashMap<>();
 
         title.add(array[0][0]);
         title.add(array[1][0]);
@@ -235,19 +235,19 @@ public class MainActivity extends AppCompatActivity {
         title.add(array[10][0]);
         title.add(array[11][0]);
 
-        List<String> about = new ArrayList<String>();
+        List<String> about = new ArrayList<>();
         about.add(array[0][0]);
         about.add(array[0][1]);
         about.add(array[0][2]);
         about.add(array[0][3]);
 
-        List<String> rules = new ArrayList<String>();
+        List<String> rules = new ArrayList<>();
         rules.add(array[1][0]);
         rules.add(array[1][1]);
         rules.add(array[1][2]);
         rules.add(array[1][3]);
 
-        List<String> character = new ArrayList<String>();
+        List<String> character = new ArrayList<>();
         character.add(array[2][0]);
         character.add(array[2][1]);
         character.add(array[2][2]);
@@ -256,12 +256,12 @@ public class MainActivity extends AppCompatActivity {
         character.add(array[2][4]);
         character.add(array[2][5]);
 
-        List<String> arts = new ArrayList<String>();
+        List<String> arts = new ArrayList<>();
         arts.add(array[3][0]);
         arts.add(array[3][1]);
         arts.add(array[3][2]);
 
-        List<String> estate = new ArrayList<String>();
+        List<String> estate = new ArrayList<>();
         arts.add(array[4][0]);
         arts.add(array[4][1]);
         arts.add(array[4][2]);
@@ -269,7 +269,7 @@ public class MainActivity extends AppCompatActivity {
         arts.add(array[4][4]);
         arts.add(array[4][5]);
 
-        List<String> combat = new ArrayList<String>();
+        List<String> combat = new ArrayList<>();
         combat.add(array[5][0]);
         combat.add(array[5][1]);
         combat.add(array[5][2]);
@@ -282,27 +282,27 @@ public class MainActivity extends AppCompatActivity {
         combat.add(array[5][9]);
         combat.add(array[5][10]);
 
-        List<String> communication = new ArrayList<String>();
+        List<String> communication = new ArrayList<>();
         communication.add(array[6][0]);
         communication.add(array[6][1]);
         communication.add(array[6][2]);
         communication.add(array[6][3]);
 
-        List<String> tournaments = new ArrayList<String>();
+        List<String> tournaments = new ArrayList<>();
         tournaments.add(array[7][0]);
 
-        List<String> gamble = new ArrayList<String>();
+        List<String> gamble = new ArrayList<>();
         gamble.add(array[8][0]);
 
-        List<String> quests = new ArrayList<String>();
+        List<String> quests = new ArrayList<>();
         quests.add(array[9][0]);
         quests.add(array[9][1]);
         quests.add(array[9][2]);
 
-        List<String> roulette = new ArrayList<String>();
+        List<String> roulette = new ArrayList<>();
         roulette.add(array[10][0]);
 
-        List<String> news = new ArrayList<String>();
+        List<String> news = new ArrayList<>();
         news.add(array[11][0]);
 
 
@@ -323,9 +323,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void onFeedBackPressed(MenuItem item) {
         Intent intent = new Intent(Intent.ACTION_SENDTO); // it's not ACTION_SEND
-        intent.putExtra(Intent.EXTRA_SUBJECT, "Отклик из приложения");
-        intent.putExtra(Intent.EXTRA_TEXT, "Добрый день!");
-        intent.setData(Uri.parse("mailto:ruslkochnev@gmail.com"));
+        intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.email_head));
+        intent.putExtra(Intent.EXTRA_TEXT, getString(R.string.email_body));
+        intent.setData(Uri.parse(getString(R.string.gmail_link)));
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
@@ -353,7 +353,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void OnClickNavHeader(View view) {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.heroeswm.ru/?rid=692098"));
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.hwm_reflink)));
         startActivity(browserIntent);
     }
 

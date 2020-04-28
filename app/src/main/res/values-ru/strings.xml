@@ -101,6 +101,8 @@
         и на профиль разработчика в Google Play, где Вы можете ознакомиться и с другими моими
         приложениями и, при желании, поддержать разработчика :)</string>
     <string name="about_bar">Обо мне</string>
+    <string name="email_body">Добрый день!</string>
+    <string name="email_head">Отклик из приложения HWM Справка</string>
 
 
 </resources>

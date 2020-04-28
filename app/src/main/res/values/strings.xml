@@ -111,6 +111,12 @@
         and to the developer\'s profile in Google Play, where you can familiarize yourself with my
         other applications and, if you wish, support the developer :)</string>
     <string name="about_bar">About me</string>
+    <string name="hwm_reflink" translatable="false">http://www.heroeswm.ru/?rid=692098</string>
+    <string name="gmail_link" translatable="false">mailto:ruslkochnev@gmail.com</string>
+    <string name="email_body">Hello!</string>
+    <string name="email_head">Feedback from LWM Help app</string>
+    <string name="vk_link" translatable="false">https://vk.com/sparkysparkybooman</string>
+    <string name="gp_link" translatable="false">https://play.google.com/store/apps/dev?id=7828901610757597354</string>
 
 
 </resources>
