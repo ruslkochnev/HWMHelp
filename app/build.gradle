@@ -7,8 +7,8 @@ android {
         applicationId "com.sparkysparkybooman.vk.hwmhelp"
         minSdkVersion 19
         targetSdkVersion 29
-        versionCode 102
-        versionName "1.23.04.2020.0103"
+        versionCode 104
+        versionName "v.1.28.04.2020.18.16.0519"
         project.ext.set("archivesBaseName", "HWMHelp.ver.-" + defaultConfig.versionName)
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         proguardFiles getDefaultProguardFile('proguard-android.txt')

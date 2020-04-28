@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/code_footer" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:id="@+id/bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/code" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_centerInParent="true"
+                android:background="#90000000">
+
+                <ImageView
+                    android:id="@+id/vk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/all_margins"
+                    android:layout_marginTop="@dimen/all_margins"
+                    android:layout_marginEnd="@dimen/all_margins"
+                    android:layout_marginBottom="@dimen/all_margins"
+                    android:layout_toStartOf="@id/face"
+                    android:onClick="onVKClick"
+                    app:srcCompat="@drawable/vk_button" />
+
+                <ImageView
+                    android:id="@+id/face"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/all_margins"
+                    android:layout_marginStart="@dimen/all_margins"
+                    android:layout_marginTop="@dimen/all_margins"
+                    android:layout_marginEnd="@dimen/all_margins"
+                    android:layout_marginBottom="@dimen/all_margins"
+                    android:onClick="onGooglePlayClick"
+                    app:srcCompat="@drawable/gp_button" />
+
+                <ImageView
+                    android:id="@+id/hwm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/all_margins"
+                    android:layout_marginTop="@dimen/all_margins"
+                    android:layout_marginEnd="@dimen/all_margins"
+                    android:layout_marginBottom="@dimen/all_margins"
+                    android:layout_toEndOf="@id/face"
+                    android:background="@drawable/hwm_button"
+                    android:onClick="onLWMClick" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#90000000"
+            android:gravity="center"
+            android:padding="@dimen/all_margins"
+            android:text="@string/about_me"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -4,8 +4,15 @@
 
     <item
         android:id="@+id/feedback_button"
-        android:icon="@android:drawable/ic_dialog_email"
+        android:icon="@android:drawable/ic_menu_send"
         android:onClick="onFeedBackPressed"
         android:title="@string/send_feedback"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/about_button"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:onClick="onAboutPressed"
+        android:title="@string/send_about"
         app:showAsAction="always" />
 </menu>

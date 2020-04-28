@@ -34,7 +34,6 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     public AdView mAdView;
     public WebView wb;
-    public DrawerLayout drawer;
     String[][] array;
     String[][] arrayURL;
     List<String> title;
@@ -102,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
                 {getString(R.string.nav_quests), getString(R.string.nav_text_quests),                       //Квесты - начало
                         getString(R.string.nav_battle_quests),},                                            //Квесты - конец
                 {getString(R.string.nav_roulette),},                                                         //Рулетка
+                {getString(R.string.nav_news_hot),},
         };
 
 
@@ -132,6 +132,7 @@ public class MainActivity extends AppCompatActivity {
                 {getString(R.string.page_quests), getString(R.string.page_text_quests),                     //Квесты - начало
                         getString(R.string.page_battle_quests),},                                           //Квесты - конец
                 {getString(R.string.page_roulette),},                                                       //Рулетка
+                {getString(R.string.page_news),},
 
         };
 
@@ -208,13 +209,13 @@ public class MainActivity extends AppCompatActivity {
                 String selectedItem = ((List) (child.get(title.get(groupPosition)))).get(childPosition).toString();
                 int i = title.indexOf(title.get(groupPosition));
                 int j = child.get(title.get(groupPosition)).indexOf(selectedItem);
-                //Toast.makeText(getApplicationContext(), array[i][j], Toast.LENGTH_SHORT).show();
                 wb.loadUrl(arrayURL[i][j]);
                 getSupportActionBar().setTitle(selectedItem);
                 mDrawerLayout.closeDrawer(GravityCompat.START);
                 return false;
             }
         });
+
     }
 
     private void genData() {
@@ -232,6 +233,7 @@ public class MainActivity extends AppCompatActivity {
         title.add(array[8][0]);
         title.add(array[9][0]);
         title.add(array[10][0]);
+        title.add(array[11][0]);
 
         List<String> about = new ArrayList<String>();
         about.add(array[0][0]);
@@ -300,6 +302,11 @@ public class MainActivity extends AppCompatActivity {
         List<String> roulette = new ArrayList<String>();
         roulette.add(array[10][0]);
 
+        List<String> news = new ArrayList<String>();
+        news.add(array[11][0]);
+
+
+
         child.put(title.get(0), about);
         child.put(title.get(1), rules);
         child.put(title.get(2), character);
@@ -311,24 +318,19 @@ public class MainActivity extends AppCompatActivity {
         child.put(title.get(8), gamble);
         child.put(title.get(9), quests);
         child.put(title.get(10), roulette);
+        child.put(title.get(11), news);
     }
 
     public void onFeedBackPressed(MenuItem item) {
         Intent intent = new Intent(Intent.ACTION_SENDTO); // it's not ACTION_SEND
-        //intent.setType("text/plain");
         intent.putExtra(Intent.EXTRA_SUBJECT, "Отклик из приложения");
         intent.putExtra(Intent.EXTRA_TEXT, "Добрый день!");
         intent.setData(Uri.parse("mailto:ruslkochnev@gmail.com"));
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
-
-
     }
-
-
     @Override
     public void onBackPressed() {
-
 
         if (wb.canGoBack()) {
             wb.goBack();
@@ -370,6 +372,15 @@ public class MainActivity extends AppCompatActivity {
             return true;
 
         return super.onOptionsItemSelected(item);
+
+    }
+
+
+    public void onAboutPressed(MenuItem item) {
+
+        Intent aboutIntent = new Intent(MainActivity.this, About.class);
+        startActivity(aboutIntent);
+
     }
 
     static class MyWebViewClient extends WebViewClient {

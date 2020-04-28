@@ -96,7 +96,7 @@
     <string name="page_text_quests">file:///android_asset/text_quests_en.html</string>
     <string name="page_tournaments">file:///android_asset/tournaments_en.html</string>
     <string name="page_troops_settlement">file:///android_asset/troops_settlement_en.html</string>
-    <string name="send_feedback">feedback</string>
+    <string name="send_feedback" translatable="false">feedback</string>
 
 
     <string name="toastMsgExit">Click again to exit</string>
@@ -104,6 +104,13 @@
 
     <string name="open" translatable="false">open</string>
     <string name="close" translatable="false">close</string>
+    <string name="send_about" translatable="false">about</string>
+    <string name="about_me">Hello! My name is Ruslan, I live in St. Petersburg. I am an indie app
+        developer for Android. I present to you the application for our favorite game,
+        «Heroes of War and Money». Above there are links to my page in VK, my referral link in the LWM
+        and to the developer\'s profile in Google Play, where you can familiarize yourself with my
+        other applications and, if you wish, support the developer :)</string>
+    <string name="about_bar">About me</string>
 
 
 </resources>

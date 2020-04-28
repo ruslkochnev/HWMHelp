@@ -94,8 +94,13 @@
     <string name="page_text_quests">file:///android_asset/text_quests_ru.html</string>
     <string name="page_tournaments">file:///android_asset/tournaments_ru.html</string>
     <string name="page_troops_settlement">file:///android_asset/troops_settlement_ru.html</string>
-    <string name="send_feedback">feedback</string>
     <string name="toastMsgExit">Нажмите ещё раз, чтобы выйти</string>
+    <string name="about_me">Привет! Меня зовут Руслан, живу в Санкт-Петербурге. Я инди разработчик
+        приложений для Андроид. Представляю Вам приложение по нашей с Вами любимой игре
+        «Герои Войны и Денег». Выше есть ссылки на мою страницу в ВК, моя реферальная ссылка в ГВД
+        и на профиль разработчика в Google Play, где Вы можете ознакомиться и с другими моими
+        приложениями и, при желании, поддержать разработчика :)</string>
+    <string name="about_bar">Обо мне</string>
 
 
 </resources>
